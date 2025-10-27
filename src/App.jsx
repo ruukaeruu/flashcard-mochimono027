@@ -351,7 +351,7 @@ function App() {
 
         <div className="mt-8 pt-6 border-t border-gray-200">
           <p className="text-sm text-gray-600">Created by</p>
-          <p className="text-lg font-semibold text-gray-800">🌸 RENGGA 🌸</p>
+          <p className="text-lg font-semibold text-gray-800">🌸 Rangga Dwi Saputra 🌸</p>
           <p className="text-xs text-gray-500 mt-1">Pengembangan Bahan Ajar Bahasa Jepang</p>
         </div>
       </div>
