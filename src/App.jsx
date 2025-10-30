@@ -1,4 +1,23 @@
-
+import honImage from './assets/hon.png';
+import keshigomuImage from './assets/keshigomu.png';
+import enpitsuImage from './assets/enpitsu.png';
+import hasamiImage from './assets/hasami.png';
+import jogiImage from './assets/jogi.png';
+import serotepuImage from './assets/serotepu.png';
+import hotchikisuImage from './assets/hotchikisu.png';
+import jishoImage from './assets/jisho.png';
+import kabanImage from './assets/kaban.png';
+import kasaImage from './assets/kasa.png';
+import kagiImage from './assets/kagi.png';
+import tokeiImage from './assets/tokei.png';
+import saifuImage from './assets/saifu.png';
+import keitaiImage from './assets/keitai.png';
+import reizoukoImage from './assets/reizoko.png';
+import makuraImage from './assets/makura.png';
+import nabeImage from './assets/nabe.png';
+import panchiImage from './assets/panchi.png';
+import suitoImage from './assets/suito.png';
+import makaImage from './assets/maka.png';
 import React, { useState, useEffect } from 'react';
 import { Volume2, RotateCw, Home, BookOpen, Trophy, ChevronLeft, ChevronRight, Shuffle } from 'lucide-react';
 
@@ -6,7 +25,7 @@ import { Volume2, RotateCw, Home, BookOpen, Trophy, ChevronLeft, ChevronRight, S
 const flashcardData = [
   {
     id: 1,
-    image: '✏️',
+    image: enpitsuImage,
     hiragana: 'えんぴつ',
     romaji: 'enpitsu',
     indonesian: 'Pensil',
@@ -16,7 +35,7 @@ const flashcardData = [
   },
   {
     id: 2,
-    image: '✂️',
+    image: hasamiImage,
     hiragana: 'はさみ',
     romaji: 'hasami',
     indonesian: 'Gunting',
@@ -26,7 +45,7 @@ const flashcardData = [
   },
   {
     id: 3,
-    image: '📏',
+    image: jogiImage,
     hiragana: 'じょうぎ',
     romaji: 'jōgi',
     indonesian: 'Penggaris',
@@ -36,7 +55,7 @@ const flashcardData = [
   },
   {
     id: 4,
-    image: '🗑️',
+    image: keshigomuImage,
     hiragana: 'けしゴム',
     romaji: 'keshigomu',
     indonesian: 'Penghapus',
@@ -46,7 +65,7 @@ const flashcardData = [
   },
   {
     id: 5,
-    image: '🖊️',
+    image: makaImage,
     hiragana: 'マーカー',
     romaji: 'mākā',
     indonesian: 'Spidol',
@@ -56,7 +75,7 @@ const flashcardData = [
   },
   {
     id: 6,
-    image: '📎',
+    image: hotchikisuImage,
     hiragana: 'ホッチキス',
     romaji: 'hotchikisu',
     indonesian: 'Stapler',
@@ -66,7 +85,7 @@ const flashcardData = [
   },
   {
     id: 7,
-    image: '📋',
+    image: panchiImage,
     hiragana: 'パンチ',
     romaji: 'panchi',
     indonesian: 'Perforator',
@@ -76,7 +95,7 @@ const flashcardData = [
   },
   {
     id: 8,
-    image: '📌',
+    image: serotepuImage,
     hiragana: 'セロテープ',
     romaji: 'serōtēpu',
     indonesian: 'Selotip',
@@ -86,7 +105,7 @@ const flashcardData = [
   },
   {
     id: 9,
-    image: '🎒',
+    image: kabanImage,
     hiragana: 'かばん',
     romaji: 'kaban',
     indonesian: 'Tas',
@@ -96,7 +115,7 @@ const flashcardData = [
   },
   {
     id: 10,
-    image: '📚',
+    image: honImage,
     hiragana: 'ほん',
     romaji: 'hon',
     indonesian: 'Buku',
@@ -106,7 +125,7 @@ const flashcardData = [
   },
   {
     id: 11,
-    image: '📱',
+    image: keitaiImage,
     hiragana: 'けいたい',
     romaji: 'keitai',
     indonesian: 'Handphone',
@@ -116,7 +135,7 @@ const flashcardData = [
   },
   {
     id: 12,
-    image: '👛',
+    image: saifuImage,
     hiragana: 'さいふ',
     romaji: 'saifu',
     indonesian: 'Dompet',
@@ -126,7 +145,7 @@ const flashcardData = [
   },
   {
     id: 13,
-    image: '📖',
+    image: jishoImage,
     hiragana: 'じしょ',
     romaji: 'jisho',
     indonesian: 'Kamus',
@@ -136,7 +155,7 @@ const flashcardData = [
   },
   {
     id: 14,
-    image: '☂️',
+    image: kasaImage,
     hiragana: 'かさ',
     romaji: 'kasa',
     indonesian: 'Payung',
@@ -146,7 +165,7 @@ const flashcardData = [
   },
   {
     id: 15,
-    image: '⌚',
+    image: tokeiImage,
     hiragana: 'とけい',
     romaji: 'tokei',
     indonesian: 'Jam Tangan',
@@ -156,7 +175,7 @@ const flashcardData = [
   },
   {
     id: 16,
-    image: '🍶',
+    image: suitoImage,
     hiragana: 'すいとう',
     romaji: 'suitō',
     indonesian: 'Botol Minum',
@@ -166,7 +185,7 @@ const flashcardData = [
   },
   {
     id: 17,
-    image: '🔑',
+    image: kagiImage,
     hiragana: 'かぎ',
     romaji: 'kagi',
     indonesian: 'Kunci',
@@ -176,7 +195,7 @@ const flashcardData = [
   },
   {
     id: 18,
-    image: '🧊',
+    image: reizoukoImage,
     hiragana: 'れいぞうこ',
     romaji: 'reizōko',
     indonesian: 'Kulkas',
@@ -186,7 +205,7 @@ const flashcardData = [
   },
   {
     id: 19,
-    image: '🛏️',
+    image: makuraImage,
     hiragana: 'まくら',
     romaji: 'makura',
     indonesian: 'Bantal',
@@ -196,7 +215,7 @@ const flashcardData = [
   },
   {
     id: 20,
-    image: '🍲',
+    image: nabeImage,
     hiragana: 'なべ',
     romaji: 'nabe',
     indonesian: 'Panci',
@@ -217,16 +236,16 @@ const generateQuizQuestions = () => {
     const allAnswers = [card, ...wrongAnswers]
       .sort(() => Math.random() - 0.5);
     
-    return {
-      question: card.image,
-      questionText: card.indonesian,
-      correct: card.hiragana,
-      options: allAnswers.map(a => ({
-        text: a.hiragana,
-        romaji: a.romaji,
-        isCorrect: a.id === card.id
-      }))
-    };
+   return {
+  image: card.image,
+  questionText: card.indonesian, // pertanyaan adalah arti bahasa Indonesia
+  correct: card.hiragana,        // jawaban benar adalah hiragana
+  options: allAnswers.map(a => ({
+    text: a.hiragana,
+    romaji: a.romaji,
+    isCorrect: a.id === card.id,
+  })),
+};
   });
 };
 
@@ -404,7 +423,9 @@ function App() {
                 className="absolute w-full h-full bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl shadow-xl flex flex-col items-center justify-center p-8"
                 style={{ backfaceVisibility: 'hidden' }}
               >
-                <div className="text-8xl mb-6">{currentCard.image}</div>
+                <div className="mb-6 flex justify-center">
+  <img src={currentCard.image} alt={currentCard.indonesian} className="w-32 h-32 object-contain" />
+</div>
                 <div className="text-4xl font-bold text-white mb-2">{currentCard.hiragana}</div>
                 <div className="text-xl text-blue-100">({currentCard.romaji})</div>
                 <button
@@ -531,8 +552,14 @@ function App() {
               </div>
             </div>
 
-            <div className="text-center mb-8">
-              <div className="text-8xl mb-4">{currentQuestion.question}</div>
+            <div className="text-center mb-8 mt-6">
+
+            <img
+            src={currentQuestion.image}
+            alt={currentQuestion.indonesian}
+            className="w-32 h-32 object-contain mx-auto mb-6"
+            />
+
               <p className="text-xl text-gray-700 font-semibold">
                 Apa bahasa Jepang dari "{currentQuestion.questionText}"?
               </p>
@@ -619,7 +646,12 @@ function App() {
                   }`}
                 >
                   <div className="flex items-center gap-3">
-                    <span className="text-2xl">{card.image}</span>
+                    <img
+  src={card.image}
+  alt={card.indonesian}
+  className="w-12 h-12 object-contain mr-3"
+/>
+
                     <div>
                       <div className="font-semibold text-gray-800">{card.hiragana}</div>
                       <div className="text-sm text-gray-600">{card.indonesian}</div>
